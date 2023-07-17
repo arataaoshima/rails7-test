@@ -1,0 +1,16 @@
+<h1>Edit this Post</h1>
+<%= form_with model: @post, local:true do |form| %>
+  <p>
+    <%= form.label :title %>
+    <%= form.text_field :title, class:"form-control" %>
+  </p>
+
+  <p>
+    <%= form.label :content %>
+    <%= form.text_area :content, class:"form-control" %>
+  </p>
+
+  <p class="text-center">
+    <%= form.submit class:"btn btn-success" %>
+  </p>
+<% end %>

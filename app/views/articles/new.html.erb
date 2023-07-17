@@ -1,0 +1,15 @@
+<h1>Create New Article</h1>
+
+<%= form_with model: @article, local:true do |form| %>
+<p>
+<%= form.label :title %>
+<%= form.text_field :title, class:"form-control" %>
+</p>
+<p>
+<%= form.label :content %>
+<%= form.text_area :content, class:"form-control", rows:"10" %>
+</p>
+<p class="text-center">
+<%= form.submit class:"btn btn-outline-success" %>
+</p>
+<% end %>

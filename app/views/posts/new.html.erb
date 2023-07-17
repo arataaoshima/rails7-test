@@ -1,0 +1,15 @@
+<h1>Create New Post</h1>
+
+<%= form_with model: @post, local:true do |form|%>
+    <p>
+      <%= form.label :title %>
+      <%= form.text_field :title, class:"form-control" %>
+    </p>
+    <p>
+      <%= form.label :content %>
+      <%= form.text_area :content, class:"form-control", rows:"5" %>
+    </p>
+    <p>
+      <%= form.submit %>
+    </p>
+<% end %>
